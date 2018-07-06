@@ -35,9 +35,11 @@
         "reboot": "npm run cleanup; npm install"
     },
     "dependencies": {
+        "polished": "^1.9.3",
         "prop-types": "^15.6.2",
         "react": "^16.4.1",
         "react-dom": "^16.4.1",
+        "react-powerplug": "^1.0.0-rc.1",
         "react-scripts": "1.1.4",
         "styled-components": "^3.3.3",
         "styled-normalize": "^8.0.0",
