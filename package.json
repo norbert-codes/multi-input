@@ -7,7 +7,7 @@
         "last 2 Firefox versions",
         "last 2 Edge versions",
         "last 2 Safari versions",
-        "last 2 iOS major versions",
+        "last 2 ios_saf versions",
         "last 2 ChromeAndroid versions"
     ],
     "prettier": {
@@ -28,8 +28,11 @@
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject",
+        "deploy": "npm run build && firebase deploy",
         "lint:js": "eslint --fix --ext .jsx,.js ./**/",
-        "lint:css": "stylelint './**/*.jsx'"
+        "lint:css": "stylelint './**/*.jsx'",
+        "cleanup": "rm yarn.lock; rm package-lock.json; rm -rf node_modules",
+        "reboot": "npm run cleanup; npm install"
     },
     "dependencies": {
         "react": "^16.4.1",
@@ -60,6 +63,6 @@
     },
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/nygdjs/multi-input"
     }
 }
