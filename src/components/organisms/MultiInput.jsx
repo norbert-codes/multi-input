@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import tokens from '../../tokens';
 import Box from '../atoms/Box';
@@ -17,26 +18,27 @@ class MultiInput extends Component {
     render() {
         return (
             <Form>
-                <label>Test</label>
-                <RemoveableInput />
-                <RemoveableInput />
-                <RemoveableInput />
-                <RemoveableInput />
-
+                <legend>{this.props.legend}</legend>
+                <RemoveableInput isRequired label={this.props.label} />
                 <Box
                     bg={tokens.colors.secondary}
                     contentRight
-                    m={tokens.space.small}
+                    m="3em -1em -1em -1em"
                     p={tokens.space.small}
                 >
                     <Button isDisabled type="reset">
                         Cancel
                     </Button>
-                    <Button type="submit">Save</Button>
+                    <Button onClick={this.handleSubmit}>Save</Button>
                 </Box>
             </Form>
         );
     }
 }
+
+MultiInput.propTypes = {
+    legend: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+};
 
 export default MultiInput;

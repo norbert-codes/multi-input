@@ -1,21 +1,29 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import CloseButton from '../atoms/CloseButton';
-import CloseIcon from '../atoms/CloseIcon';
-import Input from '../atoms/Input';
+import Box from '../atoms/Box';
+import CloseButton from './CloseButton';
+import LabeledInput from './LabeledInput';
 
 const RemoveableInput = props => (
-    <fieldset>
-        <Input onChange={props.onChange} />
-        <CloseButton type="button" onClick={props.remove}>
-            <CloseIcon />
-        </CloseButton>
-    </fieldset>
+    <Box contentLeft>
+        <LabeledInput
+            label={props.label}
+            onChange={props.onChange}
+            isRequired={props.isRequired}
+        />
+        <CloseButton ml="0.5em" mb="-1.5em" onClick={props.remove} />
+    </Box>
 );
 
 RemoveableInput.propTypes = {
-    onChange: PropTypes.func.isRequired,
-    remove: PropTypes.func.isRequired,
+    isRequired: PropTypes.bool,
+    label: PropTypes.string.isRequired,
+    onChange: PropTypes.func,
+    remove: PropTypes.func,
+};
+
+RemoveableInput.defaultProps = {
+    isRequired: false,
 };
 
 export default RemoveableInput;
