@@ -35,8 +35,8 @@ const globalStyles = () => injectGlobal`
 
     fieldset {
         border: 0;
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
 
     *,
@@ -44,9 +44,6 @@ const globalStyles = () => injectGlobal`
     *::after {
         box-sizing: border-box;
 
-        -webkit-margin-after: 0;
-        -webkit-margin-before: 0;
-        -webkit-padding-start: 0;
         margin-block-end: 0;
         margin-block-start: 0;
         margin-inline-end: 0;

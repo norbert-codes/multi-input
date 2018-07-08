@@ -1,6 +1,5 @@
-import React from 'react';
-import { space } from 'styled-system';
 import styled from 'styled-components';
+import { space } from 'styled-system';
 import tokens from '../../tokens';
 
 const Input = styled.input.attrs({
@@ -14,10 +13,10 @@ const Input = styled.input.attrs({
     border-top: 0;
     color: ${tokens.colors.black};
     font-size: ${tokens.fonts.sizes.body.default};
+    min-height: ${tokens.space.large};
     padding-top: ${tokens.space.small};
     transition: border 200ms ease-in-out;
     width: 90%;
-    min-height: ${tokens.space.large};
     ${space};
 
     &::placeholder {
@@ -36,8 +35,8 @@ const Input = styled.input.attrs({
 
         &::placeholder {
             color: ${tokens.colors.primary};
-            transform: scale(0.9);
             margin-bottom: 2em;
+            transform: scale(0.9);
         }
     }
 `;

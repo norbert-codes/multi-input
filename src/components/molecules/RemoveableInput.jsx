@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import React from 'react';
-import Input from '../atoms/Input';
 import CloseButton from '../atoms/CloseButton';
 import CloseIcon from '../atoms/CloseIcon';
+import Input from '../atoms/Input';
 
 const RemoveableInput = props => (
     <fieldset>
@@ -11,5 +12,10 @@ const RemoveableInput = props => (
         </CloseButton>
     </fieldset>
 );
+
+RemoveableInput.propTypes = {
+    onChange: PropTypes.func.isRequired,
+    remove: PropTypes.func.isRequired,
+};
 
 export default RemoveableInput;

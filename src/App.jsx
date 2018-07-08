@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import tokens from './tokens';
 import MultiInput from './components/organisms/MultiInput';
+import tokens from './tokens';
 
 const App = () => (
     <ThemeProvider theme={tokens}>

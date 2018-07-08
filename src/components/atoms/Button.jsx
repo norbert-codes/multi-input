@@ -1,7 +1,6 @@
-import React from 'react';
-import { space, color } from 'styled-system';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
+import { color, space } from 'styled-system';
 import tokens from '../../tokens';
 
 const Button = styled.button.attrs({

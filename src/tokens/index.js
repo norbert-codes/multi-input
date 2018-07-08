@@ -1,4 +1,4 @@
-import { rem, em } from 'polished';
+import { em, rem } from 'polished';
 
 // unitless(but means pixel values) base sizes to use in calculations
 const appFontSize = 16;

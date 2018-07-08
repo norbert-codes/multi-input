@@ -1,6 +1,5 @@
-import React from 'react';
-import { space } from 'styled-system';
 import styled from 'styled-components';
+import { space } from 'styled-system';
 import tokens from '../../tokens';
 
 const Form = styled.form`
