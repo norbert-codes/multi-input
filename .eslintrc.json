@@ -19,6 +19,7 @@
         "sourceType": "module"
     },
     "rules": {
+        "indent": ["error", 4],
         "compat/compat": "error",
         "no-const-assign": "warn",
         "no-this-before-super": "warn",
@@ -27,7 +28,7 @@
         "valid-typeof": "warn",
         "no-confusing-arrow": "off",
         "no-unused-vars": ["error", {
-            "varsIgnorePattern": "h"
+            "varsIgnorePattern": "React"
         }],
 
         "react/react-in-jsx-scope": "off",
