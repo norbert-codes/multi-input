@@ -30,8 +30,8 @@
         "eject": "react-scripts eject",
         "cleanup": "rm yarn.lock; rm package-lock.json; rm -rf node_modules",
         "deploy": "npm run build && firebase deploy",
-        "lint:css": "stylelint './**/*.jsx'",
-        "lint:js": "eslint --fix --ext .jsx,.js ./**/",
+        "lint:css": "stylelint './src/**/*.jsx'",
+        "lint:js": "eslint --fix --ext '.jsx,.js' './src/**/*'",
         "reboot": "npm run cleanup; npm install"
     },
     "dependencies": {
