@@ -1,12 +1,6 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
 import MultiInput from './components/organisms/MultiInput';
-import tokens from './tokens';
 
-const App = () => (
-    <ThemeProvider theme={tokens}>
-        <MultiInput />
-    </ThemeProvider>
-);
+const App = () => <MultiInput legend="Test" label="test attribute" />;
 
 export default App;

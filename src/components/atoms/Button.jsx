@@ -11,7 +11,6 @@ const Button = styled.button.attrs({
     color: ${tokens.colors.primary};
     cursor: pointer;
     font-size: ${tokens.fonts.sizes.body.default};
-    min-width: 6rem;
     overflow: hidden;
     overflow-wrap: break-word;
     padding: ${tokens.space.normal};
@@ -27,8 +26,8 @@ const Button = styled.button.attrs({
         color: ${tokens.colors.white};
     }
     ${props =>
-        props.isDisabled &&
-        css`
+        props.isDisabled
+        && css`
             color: ${tokens.colors.gray.dark};
 
             &:hover {
@@ -44,8 +43,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-    ghost: false,
-    type: 'button',
+    isDisabled: false,
+    type: 'submit',
 };
 
 export default Button;
