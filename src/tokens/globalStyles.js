@@ -22,8 +22,9 @@ const globalStyles = () => injectGlobal`
         min-height: 100vh;
         min-width: 100vw;
         text-rendering: optimizeLegibility;
+    }
 
-    &:not(.user-is-tabbing) {
+    body:not(.user-is-tabbing) {
         button:focus,
         input:focus,
         select:focus,
