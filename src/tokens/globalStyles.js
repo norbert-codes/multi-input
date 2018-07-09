@@ -36,7 +36,12 @@ const globalStyles = () => injectGlobal`
     fieldset {
         border: 0;
         margin: 0;
+        min-width: 0;
         padding: 0;
+        padding-block-end: 0.625em;
+        padding-block-start: 0.35em;
+        padding-inline-end: 0.75em;
+        padding-inline-start: 0.75em;
     }
 
     *,
