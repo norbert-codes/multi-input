@@ -34,14 +34,14 @@ const Input = styled.input.attrs({
 
         + ${Label} {
             color: ${tokens.colors.primary};
-            font-size: 90%;
+            font-size: ${tokens.fonts.sizes.body.small}
             transform: translateY(0);
         }
     }
 
     &:valid {
         + ${Label} {
-            font-size: 90%;
+            font-size: ${tokens.fonts.sizes.body.small}
             transform: translateY(0);
         }
     }
