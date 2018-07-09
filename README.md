@@ -49,8 +49,9 @@ You may have noticed the [`atoms`](https://github.com/nygdjs/multi-input/tree/ma
 
 - For the styling I used [styled-components](https://github.com/styled-components/styled-components), which is my favorite CSS-in-JS solution so far. It supports the "dumb" presentational components wrapped in container components pattern very well.  
 - A library, called [styled-system](https://github.com/jxnblk/styled-system) is also in the mix for the easy and consistent styling (also serves as a basic design-system). With the help of `styled-system` it is particularly easy to style components in place for the actual context, so you won't pollute encapsulated styles with context dependent styling, eg. to apply margin when inside a certain other component.
-Chack the API reference and docs [here](https://github.com/jxnblk/styled-system).
-An example:
+    - Check the API reference and docs [here](https://github.com/jxnblk/styled-system).  
+    - See it in action[ here.](https://github.com/nygdjs/multi-input/blob/master/src/components/organisms/MultiInput.jsx#L23)  
+    - An example:
 ```js
 // Your Button.jsx file
 import styled from 'styled-components';
