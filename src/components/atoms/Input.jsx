@@ -15,7 +15,7 @@ const Input = styled.input.attrs({
     border-top: 0;
     color: ${tokens.colors.black};
     font-size: ${tokens.fonts.sizes.body.default};
-    padding: ${tokens.space.large} 0 ${tokens.space.tiny} 0;
+    padding: ${tokens.space.large} 0 0 0;
     transition: border 200ms ease-in-out;
     width: 100%;
     ${space};
@@ -31,6 +31,7 @@ const Input = styled.input.attrs({
     &:active {
         border-bottom: ${tokens.colors.primary} 2px solid;
         color: ${tokens.colors.black};
+        padding-bottom: ${tokens.space.tiny};
 
         + ${Label} {
             color: ${tokens.colors.primary};
@@ -40,6 +41,8 @@ const Input = styled.input.attrs({
     }
 
     &:valid {
+        padding-bottom: ${tokens.space.tiny};
+
         + ${Label} {
             font-size: ${tokens.fonts.sizes.body.small}
             transform: translateY(0);

@@ -7,7 +7,8 @@ const Label = styled.label`
     pointer-events: none;
     position: absolute;
     transform: translateY(100%);
-    transition: transform 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    transition-property: transform, color;
 `;
 
 export default Label;

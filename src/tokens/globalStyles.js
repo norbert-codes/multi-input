@@ -19,6 +19,7 @@ const globalStyles = () => injectGlobal`
         font-style: normal;
         font-variant-ligatures: common-ligatures contextual;
         font-weight: ${tokens.fonts.weights.default};
+        line-height: 1.5;
         min-height: 100vh;
         min-width: 100vw;
         text-rendering: optimizeLegibility;
