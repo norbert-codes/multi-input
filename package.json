@@ -32,6 +32,7 @@
         "deploy": "npm run build && firebase deploy",
         "lint:css": "stylelint './src/**/*.jsx'",
         "lint:js": "eslint --fix --ext '.jsx,.js' './src/**/*'",
+        "precommit": "lint-staged",
         "reboot": "npm run cleanup; npm install"
     },
     "dependencies": {
@@ -43,11 +44,11 @@
         "react": "^16.4.1",
         "styled-components": "^3.3.3",
         "styled-normalize": "^8.0.0",
-        "styled-system": "^2.3.3"
+        "styled-system": "^2.3.5"
     },
     "devDependencies": {
         "babel-eslint": "^8.2.5",
-        "eslint": "^5.0.1",
+        "eslint": "^5.1.0",
         "eslint-config-airbnb": "^17.0.0",
         "eslint-config-prettier": "^2.9.0",
         "eslint-plugin-compat": "^2.4.0",
