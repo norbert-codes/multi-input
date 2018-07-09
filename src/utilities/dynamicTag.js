@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { createElement as h } from 'react';
 
 /**
+ * Render styled-components with a dynamically set HTML element
  * from: https://twitter.com/_philpl/status/888039838330621953
  *
  * ========== Usage ==========
