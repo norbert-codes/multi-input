@@ -5,13 +5,13 @@ import CloseButton from './CloseButton';
 import LabeledInput from './LabeledInput';
 
 const RemoveableInput = props => (
-    <Box contentLeft>
+    <Box contentLeft tag="fieldset">
         <LabeledInput
+            isRequired={props.isRequired}
             label={props.label}
             onChange={props.onChange}
-            isRequired={props.isRequired}
         />
-        <CloseButton ml="0.5em" mb="-1.5em" onClick={props.remove} />
+        <CloseButton aria-label="remove input" ml="0.5em" mb="-1.5em" onClick={props.remove} />
     </Box>
 );
 

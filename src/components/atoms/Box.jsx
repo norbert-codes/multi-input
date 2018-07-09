@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { color, height, space } from 'styled-system';
+import withDynamicTag from '../../utilities/dynamicTag';
 
 const Box = styled.div`
     flex: 1;
@@ -11,8 +12,8 @@ const Box = styled.div`
     ${height};
 
     ${props =>
-        props.centerContent
-        && css`
+        props.centerContent &&
+        css`
             align-items: center;
             display: flex;
             flex: 1;
@@ -20,16 +21,16 @@ const Box = styled.div`
         `};
 
     ${props =>
-        props.contentRight
-        && css`
+        props.contentRight &&
+        css`
             align-items: center;
             display: flex;
             justify-content: flex-end;
         `};
 
     ${props =>
-        props.contentLeft
-        && css`
+        props.contentLeft &&
+        css`
             align-items: center;
             display: flex;
             justify-content: flex-start;
@@ -48,4 +49,4 @@ Box.defaultProps = {
     contentRight: false,
 };
 
-export default Box;
+export default withDynamicTag(Box);

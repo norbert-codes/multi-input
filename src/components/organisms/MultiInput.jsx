@@ -25,11 +25,12 @@ class MultiInput extends Component {
                     contentRight
                     m="3em -1em -1em -1em"
                     p={tokens.space.small}
+                    tag="footer"
                 >
-                    <Button isDisabled type="reset">
+                    <Button aria-label="cancel" isDisabled type="reset">
                         Cancel
                     </Button>
-                    <Button onClick={this.handleSubmit}>Save</Button>
+                    <Button aria-label="save" onClick={this.handleSubmit}>Save</Button>
                 </Box>
             </Form>
         );
