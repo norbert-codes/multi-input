@@ -30,7 +30,9 @@ class MultiInput extends Component {
                     <Button aria-label="cancel" isDisabled type="reset">
                         Cancel
                     </Button>
-                    <Button aria-label="save" onClick={this.handleSubmit}>Save</Button>
+                    <Button aria-label="save" onClick={this.handleSubmit}>
+                        Save
+                    </Button>
                 </Box>
             </Form>
         );

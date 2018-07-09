@@ -41,6 +41,9 @@ Box.propTypes = {
     centerContent: PropTypes.bool,
     contentLeft: PropTypes.bool,
     contentRight: PropTypes.bool,
+    ...color.propTypes,
+    ...height.propTypes,
+    ...space.propTypes,
 };
 
 Box.defaultProps = {

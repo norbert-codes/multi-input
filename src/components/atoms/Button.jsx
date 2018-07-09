@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { color, space } from 'styled-system';
+import { space } from 'styled-system';
 import tokens from '../../tokens';
 
 const Button = styled.button.attrs({
@@ -18,7 +18,6 @@ const Button = styled.button.attrs({
     text-transform: uppercase;
     transition: all 200ms ease;
     transition-property: color, background-color;
-    ${color};
     ${space};
 
     &:hover {
@@ -40,6 +39,7 @@ const Button = styled.button.attrs({
 Button.propTypes = {
     isDisabled: PropTypes.bool,
     type: PropTypes.oneOf(['button', 'submit', 'reset']),
+    ...space.propTypes,
 };
 
 Button.defaultProps = {

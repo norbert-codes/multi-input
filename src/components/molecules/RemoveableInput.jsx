@@ -5,7 +5,7 @@ import CloseButton from './CloseButton';
 import LabeledInput from './LabeledInput';
 
 const RemoveableInput = props => (
-    <Box contentLeft tag="fieldset">
+    <Box contentLeft>
         <LabeledInput
             isRequired={props.isRequired}
             label={props.label}

@@ -8,4 +8,8 @@ const Form = styled.form`
     ${space};
 `;
 
+Form.propTypes = {
+    ...space.propTypes,
+};
+
 export default Form;

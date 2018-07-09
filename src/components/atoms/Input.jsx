@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { space, width } from 'styled-system';
 import tokens from '../../tokens';
 import Label from './Label';
 
@@ -18,8 +17,6 @@ const Input = styled.input.attrs({
     padding: ${tokens.space.large} 0 0 0;
     transition: border 200ms ease-in-out;
     width: 100%;
-    ${space};
-    ${width};
 
     &:hover {
         border-bottom: ${tokens.colors.gray.dark} 2px solid;
