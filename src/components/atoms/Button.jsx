@@ -26,8 +26,8 @@ const Button = styled.button.attrs({
         color: ${tokens.colors.white};
     }
     ${props =>
-        props.isDisabled
-        && css`
+        props.isDisabled &&
+        css`
             color: ${tokens.colors.gray.dark};
 
             &:hover {
