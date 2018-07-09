@@ -23,7 +23,7 @@ const tokens = {
         sizes: {
             body: {
                 default: rem('16px', appFontSize),
-                small: rem('12px', appFontSize),
+                small: rem('14px', appFontSize),
             },
         },
         sets: {
