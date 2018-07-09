@@ -16,6 +16,13 @@
         "sourceType": "module"
     },
     "rules": {
+        "arrow-parens": [
+            2,
+            "as-needed",
+            {
+                "requireForBlockBody": false
+            }
+        ],
         "compat/compat": "error",
         "constructor-super": "warn",
         "implicit-arrow-linebreak": 0,
