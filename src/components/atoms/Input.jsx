@@ -14,7 +14,6 @@ const Input = styled.input.attrs({
     border-right: 0;
     border-top: 0;
     color: ${tokens.colors.black};
-    flex: 1;
     font-size: ${tokens.fonts.sizes.body.default};
     padding: ${tokens.space.large} 0 ${tokens.space.tiny} 0;
     transition: border 200ms ease-in-out;
@@ -34,18 +33,16 @@ const Input = styled.input.attrs({
         color: ${tokens.colors.black};
 
         + ${Label} {
-            /* stylelint-disable-line */
             color: ${tokens.colors.primary};
-            top: ${tokens.space.tiny};
-            transform: scale(0.9);
+            font-size: 90%;
+            transform: translateY(0);
         }
     }
 
     &:valid {
         + ${Label} {
-            color: ${tokens.colors.primary};
             font-size: 90%;
-            top: ${tokens.space.tiny};
+            transform: translateY(0);
         }
     }
     /* stylelint-enable */
