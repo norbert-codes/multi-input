@@ -92,6 +92,7 @@ export default SearchBar;
 
 ### ☑️ TODOs
 
+- Make it themeable with [ThemeProvider](https://www.styled-components.com/docs/advanced#theming)
 -   write tests for the components with logic (Jest)
 -   use visual comparison tests for the presentational components
--   document components visually (storybook or Kit)
+-   document components visually (storybook or [Kit](https://github.com/c8r/kit))
