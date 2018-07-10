@@ -4,7 +4,7 @@ import tokens from '../../tokens';
 import Label from './Label';
 
 const Input = styled.input.attrs({
-    type: 'text',
+    type: props => props.isRequired,
     required: props => props.isRequired,
 })`
     background-color: transparent;
@@ -32,7 +32,7 @@ const Input = styled.input.attrs({
 
         + ${Label} {
             color: ${tokens.colors.primary};
-            font-size: ${tokens.fonts.sizes.body.small}
+            font-size: ${tokens.fonts.sizes.body.small};
             transform: translateY(0);
         }
     }
@@ -41,7 +41,7 @@ const Input = styled.input.attrs({
         padding-bottom: ${tokens.space.tiny};
 
         + ${Label} {
-            font-size: ${tokens.fonts.sizes.body.small}
+            font-size: ${tokens.fonts.sizes.body.small};
             transform: translateY(0);
         }
     }
@@ -50,10 +50,12 @@ const Input = styled.input.attrs({
 
 Input.propTypes = {
     isRequired: PropTypes.bool,
+    type: PropTypes.oneOf(['email', 'number', 'password', 'tel', 'text', 'url']),
 };
 
 Input.defaultProps = {
     isRequired: false,
+    type: 'text',
 };
 
 export default Input;
