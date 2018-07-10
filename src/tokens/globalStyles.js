@@ -25,6 +25,21 @@ const globalStyles = () => injectGlobal`
         text-rendering: optimizeLegibility;
     }
 
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+
+        margin-block-end: 0;
+        margin-block-start: 0;
+        margin-inline-end: 0;
+        margin-inline-start: 0;
+        padding-block-end: 0;
+        padding-block-start: 0;
+        padding-inline-end: 0;
+        padding-inline-start: 0;
+    }
+
     body:not(.user-is-tabbing) {
         button:focus,
         input:focus,
@@ -37,23 +52,7 @@ const globalStyles = () => injectGlobal`
     fieldset {
         border: 0;
         margin: 0;
-        min-width: 0;
         padding: 0;
-        padding-block-end: 0;
-        padding-block-start: 0;
-        padding-inline-end: 0;
-        padding-inline-start: 0;
-    }
-
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-
-        margin-block-end: 0;
-        margin-block-start: 0;
-        margin-inline-end: 0;
-        margin-inline-start: 0;
     }
 `;
 
