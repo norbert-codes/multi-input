@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { borders, color, height, space } from 'styled-system';
+import {
+    borders, color, height, space,
+} from 'styled-system';
 import tokens from '../../tokens';
 import withDynamicTag from '../../utilities/dynamicTag';
 
@@ -14,30 +16,30 @@ const Box = styled.div`
     ${space};
 
     ${props =>
-        props.centerContent &&
-        css`
+        props.centerContent
+        && css`
             align-items: center;
             display: flex;
             justify-content: center;
         `};
 
     ${props =>
-        props.contentRight &&
-        css`
+        props.contentRight
+        && css`
             display: flex;
             justify-content: flex-end;
         `};
 
     ${props =>
-        props.contentLeft &&
-        css`
+        props.contentLeft
+        && css`
             display: flex;
             justify-content: flex-start;
         `};
 
     ${props =>
-        props.group &&
-        css`
+        props.group
+        && css`
             > * + * {
                 margin-top: ${tokens.space.normal};
             }

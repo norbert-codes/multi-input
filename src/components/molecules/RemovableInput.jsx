@@ -4,26 +4,30 @@ import Box from '../atoms/Box';
 import CloseButton from './CloseButton';
 import LabeledInput from './LabeledInput';
 
-const RemoveableInput = props => (
+const RemovableInput = props => (
     <Box contentLeft>
         <LabeledInput
             isRequired={props.isRequired}
             label={props.label}
             onChange={props.onChange}
         />
-        <CloseButton aria-label="remove input" ml="0.5em" mb="-1.5em" onClick={props.remove} />
+        <CloseButton
+            aria-label="remove input"
+            mb="-1.5em"
+            onClick={props.remove}
+        />
     </Box>
 );
 
-RemoveableInput.propTypes = {
+RemovableInput.propTypes = {
     isRequired: PropTypes.bool,
     label: PropTypes.string.isRequired,
     onChange: PropTypes.func,
     remove: PropTypes.func,
 };
 
-RemoveableInput.defaultProps = {
+RemovableInput.defaultProps = {
     isRequired: false,
 };
 
-export default RemoveableInput;
+export default RemovableInput;
