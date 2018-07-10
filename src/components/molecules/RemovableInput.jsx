@@ -22,8 +22,8 @@ const RemovableInput = props => (
 RemovableInput.propTypes = {
     isRequired: PropTypes.bool,
     label: PropTypes.string.isRequired,
-    onChange: PropTypes.func,
-    remove: PropTypes.func,
+    onChange: PropTypes.func.isRequired,
+    remove: PropTypes.func.isRequired,
 };
 
 RemovableInput.defaultProps = {
