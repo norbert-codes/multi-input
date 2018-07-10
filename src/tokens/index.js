@@ -12,7 +12,7 @@ const tokens = {
             light: 'hsla(0, 0%, 76%, 1)',
             dark: 'hsla(0, 0%, 40%, 1)',
         },
-        primary: 'hsla(216, 71%, 66%, 1)',
+        primary: 'hsla(216, 71%, 55%, 1)',
         secondary: 'hsla(211, 100%, 95%, 1)',
     },
     fonts: {
@@ -34,12 +34,6 @@ const tokens = {
             },
         },
     },
-    // Breakpoints
-    breakpoints: ['40em', '52em', '64em'],
-    // @media screen and (min-width: 40em)
-    // @media screen and (min-width: 52em)
-    // @media screen and (min-width: 64em)
-
     // Spacing Scale (used for margin and padding)
     space: {
         tiny: em(0.25 * baseSpacing, appFontSize),
