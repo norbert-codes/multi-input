@@ -19,8 +19,7 @@
         "*.{png,jpeg,jpg,gif,svg}": "imagemin-lint-staged",
         "*.{css,scss}": "stylelint",
         "*.{js,jsx}": [
-            "eslint --fix",
-            "stylelint"
+            "eslint --fix"
         ]
     },
     "scripts": {
