@@ -60,7 +60,7 @@
         "imagemin-lint-staged": "^0.3.0",
         "lint-staged": "^7.2.0",
         "prettier": "^1.13.7",
-        "stylelint": "^9.3.0",
+        "stylelint": "^15.10.1",
         "stylelint-config-standard": "^18.2.0",
         "stylelint-config-styled-components": "^0.1.1",
         "stylelint-no-unsupported-browser-features": "^3.0.0",
